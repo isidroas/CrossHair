@@ -67,7 +67,7 @@ class Pawn(ChessPiece):
 
 class Rook(FreeChessPiece):
     def can_move_to(self, x: int, y: int) -> bool:
-        return (x == self.x) ^ (y == self.y)
+        return (x == self.x) or (y == self.y)
 
 
 class King(FreeChessPiece):
